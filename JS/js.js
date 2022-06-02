@@ -1,0 +1,3 @@
+$(function () {
+    $('#table-polaznici').DataTable();
+});

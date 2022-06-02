@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITEH - PHP domaći</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="css/stil.css">
 </head>
 
@@ -14,7 +15,7 @@
 
     <h2 class="text-center" id="naslov">Polaznici - Instruktori - Auto škole</h2>
 
-    <table class="table table-hover table-striped" id="table-polaznici">
+    <table class="table table-hover table-striped display" id="table-polaznici">
         <thead>
             <tr>
                 <th>Ime</th>
@@ -67,6 +68,10 @@
 
     </table>
 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="JS/js.js"></script>
 </body>
 
 </html>

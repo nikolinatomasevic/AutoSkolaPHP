@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
 
 body {
+    margin: 0;
     font-family: 'Graduate', cursive;
     background-color: #e2faff;
 }
@@ -13,5 +14,22 @@ body {
 #table-polaznici {
     width: 1000px;
     height: 350px;
-    margin-left: 480px;
+}
+
+#table-polaznici_length{
+    margin-top: 50px;
+    margin-left: 460px;
+}
+
+#table-polaznici_filter{
+    margin-right: 460px;
+    margin-top: 50px;
+}
+
+#table-polaznici_info{
+    margin-left: 460px;
+}
+
+#table-polaznici_paginate{
+    margin-right: 440px;
 }
