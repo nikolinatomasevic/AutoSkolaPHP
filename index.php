@@ -24,6 +24,7 @@
                 <th>Teorija</th>
                 <th>Instruktor</th>
                 <th>Auto škola</th>
+                <th>DELETE</th>
             </tr>
         </thead>
 
@@ -61,6 +62,9 @@
                     </td>
                     <td>
                         <?php echo $ROW['aknaziv']; ?>
+                    </td>
+                    <td>
+                        <button type="button" id="button-delete" class="btn btn-danger" value="<?php echo $ROW['pid']; ?>">Obriši</button>
                     </td>
                 </tr>
             <?php } ?>
