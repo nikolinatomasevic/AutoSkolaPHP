@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+body {
+    font-family: 'Graduate', cursive;
+    background-color: #e2faff;
+}
+
+#naslov {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#table-polaznici {
+    width: 1000px;
+    height: 350px;
+    margin-left: 480px;
+}
