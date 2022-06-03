@@ -76,6 +76,7 @@ function popuniFormuEdit() {
 
             success: function (polaznik) {
                 const obj = JSON.parse(polaznik);
+                $('#polaznik_id').val(idPolaznika);
                 $('#ime_izmena').val(obj.ime)
                 $('#prezime_izmena').val(obj.prezime)
                 $('#kategorija_izmena').val(obj.kategorija)
@@ -85,5 +86,35 @@ function popuniFormuEdit() {
             }
         })
     });
+
+
+    $(document).on('click', '#button-izmena', function () {
+
+        const polaznik = {
+            id: $('#polaznik_id').val(),
+            ime: $('#ime_izmena').val(),
+            prezime: $('#prezime_izmena').val(),
+            kategorija: $('#kategorija_izmena').val(),
+            teorija: $('#teorija_izmena').val(),
+            instruktor: $('#instruktor_izmena').val(),
+            autoSkola: $('#auto_skola_izmena').val()
+        };
+
+        $.ajax({
+            url: 'CRUD/update.php',
+            method: 'post',
+            data: { Polaznik: polaznik },
+
+            success: function () {
+                location.reload();
+            }
+        })
+    });
+
+
+
+
+
+
 
 }

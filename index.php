@@ -37,7 +37,7 @@
 
             $QUERY = "select p.id as pid, p.ime as pime, p.prezime as pprezime, p.kategorija, p.teorija, ins.ime, ins.prezime, ak.naziv as aknaziv
              from polaznik p join instruktor ins on p.instruktor_id=ins.id 
-             join auto_skola as ak on ins.auto_skola_id=ak.id ";
+             join auto_skola as ak on p.autoskola_id=ak.id ";
 
             include('DB/baza.php');
 
