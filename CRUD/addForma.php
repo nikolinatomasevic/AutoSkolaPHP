@@ -20,13 +20,36 @@
      <div class="mb-2">
          <label class="form-label">Instruktor: </label>
          <select class="form-select text-center" id="instruktor">
+             <?php
+                include('OOP/instruktor.php');
 
+                $ins = new Instruktor();
+                $instruktori = $ins->getAll();
+
+                foreach ($instruktori as $i) {
+                ?>
+                 <option value="<?php echo $i['id']; ?>"><?php echo $i['ime'] . ' ' . $i['prezime']; ?></option>
+             <?php
+                }
+                ?>
          </select>
      </div>
 
      <div class="form-group mb-2">
          <label class="form-label">Auto škola: </label>
          <select class="form-select text-center" id="auto_skola">
+             <?php
+                include('OOP/autoskola.php');
+
+                $as = new AutoSkola();
+                $autoSkole = $as->getAll();
+
+                foreach ($autoSkole as $askola) {
+                ?>
+                 <option value="<?php echo $askola['id']; ?>"><?php echo $askola['naziv']; ?></option>
+             <?php
+                }
+                ?>
 
          </select>
      </div>
