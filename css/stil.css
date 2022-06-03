@@ -12,6 +12,8 @@ body {
 }
 
 #table-polaznici {
+    margin-top: 20px;
+    margin-left: 500px;
     width: 1000px;
     height: 350px;
 }
@@ -32,4 +34,16 @@ body {
 
 #table-polaznici_paginate{
     margin-right: 440px;
+}
+
+#dugme {
+    width: 300px;
+    margin-left: 800px;
+}
+
+#forma-novi-polaznik {
+    width: 500px;
+    margin-top: 40px;
+    margin-left: 700px;
+    margin-bottom: 100px;
 }

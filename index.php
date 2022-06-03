@@ -13,7 +13,10 @@
 
 <body>
 
+
     <h2 class="text-center" id="naslov">Polaznici - Instruktori - Auto škole</h2>
+    <button type="button" id="dugme" class="btn btn-danger">NOVI POLAZNIK</button>
+
 
     <table class="table table-hover table-striped display" id="table-polaznici">
         <thead>
@@ -71,6 +74,12 @@
         </tbody>
 
     </table>
+
+    <div>
+        <?php
+        include('CRUD/addForma.php');
+        ?>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

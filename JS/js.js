@@ -9,7 +9,6 @@ function obrisiPolaznika() {
     $(document).on('click', '#button-delete', function () {
 
         var id = $(this).attr('value');
-        alert(id)
 
         $.ajax({
             url: 'CRUD/delete.php',
