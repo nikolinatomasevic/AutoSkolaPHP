@@ -2,6 +2,7 @@ $(function () {
     $('#table-polaznici').DataTable();
     obrisiPolaznika();
     dodajPolaznika();
+    popuniFormuEdit();
 });
 
 function obrisiPolaznika() {
@@ -55,6 +56,33 @@ function dodajPolaznika() {
                 }
             })
 
+        })
+    });
+
+}
+
+
+function popuniFormuEdit() {
+
+    $(document).on('click', '#button-edit', function () {
+
+        $('#forma-izmena-polaznika').attr('hidden', false);
+        const idPolaznika = $(this).attr('value');
+
+        $.ajax({
+            url: 'CRUD/get.php',
+            method: 'post',
+            data: { IDPolaznik: idPolaznika },
+
+            success: function (polaznik) {
+                const obj = JSON.parse(polaznik);
+                $('#ime_izmena').val(obj.ime)
+                $('#prezime_izmena').val(obj.prezime)
+                $('#kategorija_izmena').val(obj.kategorija)
+                $('#teorija_izmena').val(obj.teorija)
+                $('#instruktor_izmena').val(obj.instruktor_id)
+                $('#auto_skola_izmena').val(obj.autoskola_id)
+            }
         })
     });
 

@@ -41,7 +41,7 @@ body {
     margin-left: 800px;
 }
 
-#forma-novi-polaznik {
+#forma-novi-polaznik, #forma-izmena-polaznika {
     width: 500px;
     margin-top: 40px;
     margin-left: 700px;

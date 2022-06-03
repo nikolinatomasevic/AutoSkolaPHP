@@ -28,6 +28,7 @@
                 <th>Instruktor</th>
                 <th>Auto škola</th>
                 <th>DELETE</th>
+                <th>EDIT</th>
             </tr>
         </thead>
 
@@ -69,6 +70,9 @@
                     <td>
                         <button type="button" id="button-delete" class="btn btn-danger" value="<?php echo $ROW['pid']; ?>">Obriši</button>
                     </td>
+                    <td>
+                        <button type="button" id="button-edit" class="btn btn-danger" value="<?php echo $ROW['pid']; ?>">Izmena</button>
+                    </td>
                 </tr>
             <?php } ?>
         </tbody>
@@ -78,6 +82,7 @@
     <div>
         <?php
         include('CRUD/addForma.php');
+        include('CRUD/editForma.php');
         ?>
     </div>
 
